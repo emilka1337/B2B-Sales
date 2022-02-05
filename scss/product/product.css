@@ -51,6 +51,12 @@ body {
   border: 1px solid #FFCCBB;
 }
 
+@media screen and (max-width: 992px) {
+  .container header .col-1 button {
+    width: 100%;
+  }
+}
+
 .container main .col-lg-6:nth-child(1) img {
   width: 100%;
 }

@@ -71,6 +71,14 @@
             border: 1px solid #FFCCBB;
         }
     }
+
+    @media screen and (max-width: 992px) {
+        .col-1 {
+            button {
+                width: 100%;
+            }
+        }
+    }
 }
 
 @mixin label {

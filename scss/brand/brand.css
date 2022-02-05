@@ -51,6 +51,12 @@ body {
   border: 1px solid #FFCCBB;
 }
 
+@media screen and (max-width: 992px) {
+  .container header .col-1 button {
+    width: 100%;
+  }
+}
+
 .container main .brands-row .col-lg-2 {
   padding: 40px 20px;
 }
