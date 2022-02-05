@@ -36,10 +36,13 @@
     flex-wrap: nowrap;
     margin-bottom: 50px;
 
-    .col-1 {
+    .col-1:nth-child(1),
+    .col-2:nth-child(1),
+    .col-3:nth-child(1) {
+        justify-content: flex-start;
         button {
             width: 66px;
-            margin-right: 50px;
+            // margin-right: 50px;
             border: none;
             background: none;
 
@@ -50,7 +53,8 @@
     }
 
     .col-8,
-    .col-9 {
+    .col-9,
+    .col-10 {
         .label {
             border-bottom: 1px solid #006C84;
         }
@@ -73,9 +77,16 @@
     }
 
     @media screen and (max-width: 992px) {
-        .col-1 {
+
+        .col-1:nth-child(1),
+        .col-3:nth-child(1) {
             button {
-                width: 100%;
+                // width: 100%;
+                margin: 0 !important;
+
+                img {
+                    width: 100%;
+                }
             }
         }
     }
