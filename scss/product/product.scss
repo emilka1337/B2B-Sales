@@ -19,6 +19,7 @@ body {
                 width: 100%;
             }
         }
+
         .col-lg-6:nth-child(2) {
             padding-left: 20px;
 
@@ -58,7 +59,7 @@ body {
                         font-size: 20px !important;
                     }
                 }
-                
+
                 &.active {
                     @include label;
                     justify-content: center;
@@ -81,6 +82,32 @@ body {
         .similar {
             .product {
                 @include product;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .container {
+        main {
+            margin-bottom: 50px;
+
+            .col-lg-6 {
+                margin-bottom: 50px;
+            }
+
+            .col-lg-6:nth-child(2) {
+                button {
+                    display: block;
+                    margin: auto;
+                    width: 90%;
+                }
+            }
+        }
+
+        footer {
+            .more-panel {
+                justify-content: space-between;
             }
         }
     }

@@ -14,25 +14,29 @@ body {
     }
 
     main {
-        .col-6:nth-child(1) {
-            .description {
-                display: flex;
-                flex-direction: column;
-                align-items: flex-end;
+        .col-lg-6:nth-child(1) {
+            .row {
+                justify-content: flex-end;
 
-                input,
-                textarea {
-                    width: 80%;
-                }
+                .description {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-end;
 
-                input {
-                    margin-bottom: 50px;
-                    padding: 5px;
+                    input,
+                    textarea {
+                        width: 80%;
+                    }
+
+                    input {
+                        margin-bottom: 50px;
+                        padding: 5px;
+                    }
                 }
             }
         }
 
-        .col-6:nth-child(2) {
+        .col-lg-6:nth-child(2) {
             form {
                 height: 100%;
                 display: flex;
@@ -42,6 +46,38 @@ body {
                 input {
                     width: 50%;
                     padding: 5px 20px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .container {
+        .col-lg-6:nth-child(1) {
+            margin-bottom: 50px;
+
+            .row {
+                justify-content: center !important;
+
+                .description {
+                    align-items: center !important;
+
+                    input,
+                    textarea {
+                        width: 90% !important;
+                    }
+                }
+            }
+        }
+
+        .col-lg-6:nth-child(2) {
+            form {
+                align-items: center;
+
+                input {
+                    width: 90% !important;
+                    margin-bottom: 20px;
                 }
             }
         }

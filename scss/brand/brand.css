@@ -74,15 +74,15 @@ body {
   }
 }
 
-.container main .brands-row .col-lg-2 {
-  padding: 40px 20px;
+.container main .brands-row .col-lg-4 {
+  padding: 40px 10px;
 }
 
-.container main .brands-row .col-lg-2 .brand {
+.container main .brands-row .col-lg-4 .brand {
   text-align: center;
 }
 
-.container main .brands-row .col-lg-2 .brand .image-container {
+.container main .brands-row .col-lg-4 .brand .image-container {
   -webkit-box-shadow: 5px 5px 5px #666666;
           box-shadow: 5px 5px 5px #666666;
   width: 100%;
@@ -96,11 +96,11 @@ body {
           justify-content: center;
 }
 
-.container main .brands-row .col-lg-2 .brand .image-container img {
+.container main .brands-row .col-lg-4 .brand .image-container img {
   width: 60%;
 }
 
-.container main .brands-row .col-lg-2 .brand h6 {
+.container main .brands-row .col-lg-4 .brand h6 {
   margin: 20px 0px;
 }
 /*# sourceMappingURL=brand.css.map */

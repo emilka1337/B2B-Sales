@@ -47,3 +47,15 @@ body {
         }
     }
 }
+
+@media screen and (max-width: 992px) {
+    .container {
+        .row {
+            flex-direction: column-reverse;
+
+            .col-lg-6:nth-child(2) {
+                margin-bottom: 50px;
+            }
+        }
+    }
+}

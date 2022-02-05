@@ -226,4 +226,23 @@ body {
   text-align: center;
   margin: 20px 0px;
 }
+
+@media screen and (max-width: 992px) {
+  .container main {
+    margin-bottom: 50px;
+  }
+  .container main .col-lg-6 {
+    margin-bottom: 50px;
+  }
+  .container main .col-lg-6:nth-child(2) button {
+    display: block;
+    margin: auto;
+    width: 90%;
+  }
+  .container footer .more-panel {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
 /*# sourceMappingURL=product.css.map */

@@ -115,6 +115,9 @@ body .container form button {
   body .container form {
     width: 100%;
   }
+  body .container form button {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 992px) {

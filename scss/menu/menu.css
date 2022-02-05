@@ -57,4 +57,16 @@ body {
       -ms-flex-align: center;
           align-items: center;
 }
+
+@media screen and (max-width: 992px) {
+  .container .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .container .row .col-lg-6:nth-child(2) {
+    margin-bottom: 50px;
+  }
+}
 /*# sourceMappingURL=menu.css.map */
