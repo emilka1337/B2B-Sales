@@ -1,0 +1,49 @@
+@import "../variables";
+@import "../mixins";
+
+body {
+    background-color: $backgroundColor;
+}
+
+.container {
+    padding: 50px 0px;
+    min-height: 100vh;
+
+    header {
+        @include header;
+    }
+
+    main {
+        .col-6:nth-child(1) {
+            .description {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+
+                input,
+                textarea {
+                    width: 80%;
+                }
+
+                input {
+                    margin-bottom: 50px;
+                    padding: 5px;
+                }
+            }
+        }
+
+        .col-6:nth-child(2) {
+            form {
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+                input {
+                    width: 50%;
+                    padding: 5px 20px;
+                }
+            }
+        }
+    }
+}

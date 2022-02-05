@@ -1,0 +1,139 @@
+body {
+  background: #D5EFF5;
+}
+
+.container {
+  padding: 50px 0px;
+  min-height: 100vh;
+}
+
+.container header {
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  margin-bottom: 50px;
+}
+
+.container header .col-1 button {
+  width: 66px;
+  margin-right: 50px;
+  border: none;
+  background: none;
+}
+
+.container header .col-1 button img {
+  width: 100%;
+}
+
+.container header .col-8 .label,
+.container header .col-9 .label {
+  border-bottom: 1px solid #006C84;
+}
+
+.container header .col-3,
+.container header .col-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  gap: 20px;
+}
+
+.container header .col-3 button,
+.container header .col-2 button {
+  width: 80px;
+  height: 80px;
+  border: none;
+  border-radius: 50%;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(3, 3, 3, 0.11)), to(#ffffff));
+  background: linear-gradient(0deg, rgba(3, 3, 3, 0.11), #ffffff);
+  border: 1px solid #FFCCBB;
+}
+
+.container header .col-9 {
+  text-align: center;
+}
+
+.container main .col-6 .label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#6EB5C0), to(#FFFFFF));
+  background: linear-gradient(180deg, #6EB5C0 0%, #FFFFFF 100%);
+  padding: 10px 20px;
+  cursor: pointer;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 10px 10px 0px 0px;
+  width: 60%;
+  margin: 20px auto;
+}
+
+.container main .col-6 .label p {
+  margin: 0;
+  font-size: 22px;
+}
+
+.container main .col-6 .label p {
+  font-weight: 500;
+}
+
+.container main .col-6 .field {
+  width: 100%;
+  min-height: 50vh;
+  border: 2px solid #000;
+  border-radius: 10px;
+  background: #fff;
+}
+
+.container main .col-6 button {
+  background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#6EB5C0));
+  background: linear-gradient(#fff, #6EB5C0);
+  border-radius: 4px;
+  color: #006C84;
+  width: 420px;
+  font-size: 30px;
+  letter-spacing: 3px;
+  font-weight: 700;
+  border: 1px solid #FFCCBB;
+  width: 50%;
+}
+
+.container main .col-4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  gap: 20px;
+}
+
+.container main .col-4 button {
+  background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#6EB5C0));
+  background: linear-gradient(#fff, #6EB5C0);
+  border-radius: 4px;
+  color: #006C84;
+  width: 420px;
+  font-size: 30px;
+  letter-spacing: 3px;
+  font-weight: 700;
+  border: 1px solid #FFCCBB;
+  width: 50%;
+}
+/*# sourceMappingURL=arrange_payment_3.css.map */

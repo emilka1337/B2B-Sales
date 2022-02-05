@@ -1,0 +1,136 @@
+@charset "UTF-8";
+body {
+  background: #D5EFF5;
+}
+
+body .container {
+  padding: 50px;
+  min-height: 80vh;
+}
+
+body .container .logo img {
+  display: block;
+  margin: auto;
+  width: 424px;
+}
+
+body .container form {
+  width: 80%;
+  margin: auto;
+}
+
+body .container form h1 {
+  text-align: center;
+  color: #006C84;
+  letter-spacing: 5px;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+body .container form input[type="text"],
+body .container form input[type="email"],
+body .container form input[type="password"] {
+  border: 1px solid #FFCCBB;
+  letter-spacing: 3px;
+}
+
+body .container form .checkboxes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .container form .checkboxes .col-lg-3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .container form .checkboxes span {
+  margin: 0px 20px;
+  font-size: 18px;
+}
+
+body .container form .checkboxes input {
+  display: none;
+}
+
+body .container form .checkboxes label {
+  width: 40px;
+  height: 40px;
+  background: #fff;
+  border: 1px solid #FFCCBB;
+  border-radius: 10px;
+  position: relative;
+}
+
+body .container form .checkboxes label.checked::after {
+  content: "✓";
+  font-size: 40px;
+  position: absolute;
+  top: -12px;
+  left: 4px;
+}
+
+body .container form .checkboxes span {
+  letter-spacing: 3px;
+}
+
+@media screen and (max-width: 992px) {
+  body .container form .checkboxes {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+body .container form button {
+  background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#6EB5C0));
+  background: linear-gradient(#fff, #6EB5C0);
+  border-radius: 4px;
+  color: #006C84;
+  width: 420px;
+  font-size: 30px;
+  letter-spacing: 3px;
+  font-weight: 700;
+  border: 1px solid #FFCCBB;
+  -webkit-box-shadow: 5px 5px 5px #666666;
+          box-shadow: 5px 5px 5px #666666;
+  display: block;
+  margin: auto;
+  width: 60%;
+}
+
+@media screen and (max-width: 992px) {
+  body .container form {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .container {
+    padding: 0;
+  }
+  .container .logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .container .logo img {
+    width: 80% !important;
+  }
+}
+/*# sourceMappingURL=register.css.map */

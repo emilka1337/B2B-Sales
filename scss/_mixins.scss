@@ -1,0 +1,128 @@
+@mixin shadow {
+    box-shadow: 5px 5px 5px rgb(102, 102, 102);
+}
+
+@mixin menuButton {
+    display: inline-block;
+    background-color: #fff;
+    color: #006C84;
+    padding: 10px 100px;
+    text-decoration: none;
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: 26px;
+    font-weight: 600;
+    border: 1px solid #FFCCBB;
+    border-radius: 10px;
+    @include shadow;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+@mixin mainButton {
+    background: linear-gradient(#fff, #6EB5C0);
+    border-radius: 4px;
+    color: #006C84;
+    width: 420px;
+    font-size: 30px;
+    letter-spacing: 3px;
+    font-weight: 700;
+    border: 1px solid #FFCCBB;
+}
+
+@mixin header {
+    flex-wrap: nowrap;
+    margin-bottom: 50px;
+
+    .col-1 {
+        button {
+            width: 66px;
+            margin-right: 50px;
+            border: none;
+            background: none;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .col-8,
+    .col-9 {
+        .label {
+            border-bottom: 1px solid #006C84;
+        }
+    }
+
+    .col-3,
+    .col-2 {
+        display: flex;
+        justify-content: flex-end;
+        gap: 20px;
+
+        button {
+            width: 80px;
+            height: 80px;
+            border: none;
+            border-radius: 50%;
+            background: linear-gradient(0deg, rgba(3, 3, 3, 0.11), #ffffff);
+            border: 1px solid #FFCCBB;
+        }
+    }
+}
+
+@mixin label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(180deg, #6EB5C0 0%, #FFFFFF 100%);
+    padding: 10px 20px;
+    cursor: pointer;
+
+    p {
+        margin: 0;
+        font-size: 22px;
+    }
+}
+
+@mixin product {
+    .image-container {
+        @include shadow;
+        border: 1px solid #FFCCBB;
+        border-radius: 10px;
+        background: #fff;
+        width: 100%;
+        margin: 0;
+
+        .col-9 {
+            img {
+                width: 100%;
+            }
+        }
+
+        .col-3 {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+
+            button {
+                border: none;
+                background: transparent;
+
+                img {
+                    height: 30px;
+                }
+            }
+        }
+    }
+
+    h6 {
+        text-align: center;
+        margin: 20px 0px;
+    }
+}

@@ -1,0 +1,87 @@
+@import "../variables";
+@import "../mixins";
+
+body {
+    background: $backgroundColor;
+}
+
+.container {
+    padding: 50px 0px;
+    min-height: 100vh;
+
+    header {
+        @include header;
+    }
+
+    main {
+        .col-lg-6:nth-child(1) {
+            img {
+                width: 100%;
+            }
+        }
+        .col-lg-6:nth-child(2) {
+            padding-left: 20px;
+
+            .description {
+                p {
+                    font-weight: 500;
+                }
+            }
+
+            button {
+                @include mainButton;
+                font-weight: 500;
+                font-size: 26px;
+            }
+        }
+    }
+
+    footer {
+        .more-panel {
+            border-bottom: 2px solid #000;
+            display: flex;
+            margin-bottom: 50px;
+
+            button {
+                background: transparent;
+                border: none;
+                width: 30% !important;
+
+                &:hover {
+                    @include label;
+                    justify-content: center;
+                    border: 2px solid #000;
+                    border-bottom: none;
+                    border-radius: 10px 10px 0px 0px;
+
+                    p {
+                        font-size: 20px !important;
+                    }
+                }
+                
+                &.active {
+                    @include label;
+                    justify-content: center;
+                    border: 2px solid #000;
+                    border-bottom: none;
+                    border-radius: 10px 10px 0px 0px;
+
+                    p {
+                        font-size: 20px !important;
+                    }
+                }
+
+                p {
+                    font-size: 20px;
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        .similar {
+            .product {
+                @include product;
+            }
+        }
+    }
+}

@@ -1,0 +1,105 @@
+@import "../variables";
+@import "../mixins";
+
+body {
+    background-color: $backgroundColor;
+}
+
+.container {
+    padding: 50px;
+    min-height: 80vh;
+
+    .logo {
+        img {
+            display: block;
+            margin: auto;
+            width: 532px;
+        }
+    }
+
+    form {
+        input {
+            background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+            border: 1px solid #FFCCBB;
+            box-sizing: border-box;
+            filter: drop-shadow(4px 7px 4px rgba(0, 0, 0, 0.25));
+            border-radius: 10px;
+            outline: none;
+            padding: 10px;
+            width: 420px;
+            @include shadow;
+        }
+
+        .password {
+            position: relative;
+
+            button {
+                position: absolute;
+                right: 10px;
+                top: 8px;
+                border: none;
+                background: none;
+            }
+        }
+
+        a {
+            color: #006C84;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 20px;
+            letter-spacing: 3px;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+        button.login {
+            @include mainButton;
+        }
+    }
+
+    .main-carousel {
+        .carousel-cell {
+            padding: 0px 50px;
+        }
+    }
+}
+
+footer {
+    background-color: #006C84;
+    min-height: 10vh;
+    display: flex;
+    align-items: center;
+
+    main {
+        width: 40%;
+        margin: auto;
+        text-align: center;
+
+        p {
+            color: #000;
+            font-weight: 700;
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .container {
+        .logo {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 50px;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        form {
+            input, div, button.login {
+                width: 100%;
+            }
+        }
+    }
+}

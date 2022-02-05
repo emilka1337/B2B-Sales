@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="./bootstrap/bootstrap.min.css">
+    <script src="./bootstrap/bootstrap.bundle.min.js"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./scss/register/register.css">
+    <!-- JS -->
+    <script defer src="./js/register.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="logo">
+                <img src="./img/logo.png" alt="">
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <form id="registerForm">
+                <h1 class="my-3">Регистрация</h1>
+                <input type="text" class="form-control mb-3" placeholder="Ф.И.О">
+                <input type="text" class="form-control mb-3" placeholder="Номер телефона">
+                <input type="text" class="form-control mb-3" placeholder="Название Фирмы/Бренда">
+                <input type="email" class="form-control mb-3" placeholder="E-Mail">
+                <input type="password" class="form-control mb-3" placeholder="Пароль">
+                <div class="checkboxes">
+                    <div class="row w-100">
+                        <div class="col-lg-3 mb-3">
+                            <input type="radio" name="userType" id="supplier">
+                            <label for="supplier" class="radio-label"></label>
+                            <span>Поставщик</span>
+                        </div>
+                        <div class="col-lg-3 mb-3">
+                            <input type="radio" name="userType" id="customer">
+                            <label for="customer" class="radio-label"></label>
+                            <span>Заказчик</span>
+                        </div>
+                    </div>
+                </div>
+                <button class="my-3">Отправить</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

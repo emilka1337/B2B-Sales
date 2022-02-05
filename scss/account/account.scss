@@ -1,0 +1,48 @@
+@import "../variables";
+@import "../mixins";
+
+body {
+    background-color: $backgroundColor;
+}
+
+.container {
+    padding: 50px 0px;
+    min-height: 100vh;
+
+    header {
+        @include header;
+    }
+
+    .profile {
+        .avatar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        ul {
+            height: 100%;
+            padding: 0;
+
+            li {
+                display: inline-block;
+                width: 100%;
+                height: 18%;
+                border-bottom: 1px solid #006C84;
+            }
+        }
+    }
+
+    .buttons {
+
+        ul {
+            list-style: none;
+            padding: 0;
+
+            a {
+                @include menuButton;
+                padding: 10px 50px;
+            }
+        }
+    }
+}

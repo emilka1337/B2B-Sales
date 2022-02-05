@@ -1,0 +1,83 @@
+body {
+  background: #D5EFF5;
+}
+
+.container {
+  padding: 50px 0px;
+  min-height: 100vh;
+}
+
+.container header {
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  margin-bottom: 50px;
+}
+
+.container header .col-1 button {
+  width: 66px;
+  margin-right: 50px;
+  border: none;
+  background: none;
+}
+
+.container header .col-1 button img {
+  width: 100%;
+}
+
+.container header .col-8 .label,
+.container header .col-9 .label {
+  border-bottom: 1px solid #006C84;
+}
+
+.container header .col-3,
+.container header .col-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  gap: 20px;
+}
+
+.container header .col-3 button,
+.container header .col-2 button {
+  width: 80px;
+  height: 80px;
+  border: none;
+  border-radius: 50%;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(3, 3, 3, 0.11)), to(#ffffff));
+  background: linear-gradient(0deg, rgba(3, 3, 3, 0.11), #ffffff);
+  border: 1px solid #FFCCBB;
+}
+
+.container main .brands-row .col-lg-2 {
+  padding: 40px 20px;
+}
+
+.container main .brands-row .col-lg-2 .brand {
+  text-align: center;
+}
+
+.container main .brands-row .col-lg-2 .brand .image-container {
+  -webkit-box-shadow: 5px 5px 5px #666666;
+          box-shadow: 5px 5px 5px #666666;
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid #006C84;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container main .brands-row .col-lg-2 .brand .image-container img {
+  width: 60%;
+}
+
+.container main .brands-row .col-lg-2 .brand h6 {
+  margin: 20px 0px;
+}
+/*# sourceMappingURL=brand.css.map */

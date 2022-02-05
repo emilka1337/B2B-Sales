@@ -1,0 +1,47 @@
+@import "../variables";
+@import "../mixins";
+
+body {
+    background: $backgroundColor;
+}
+
+.container {
+    padding: 50px 0px;
+    min-height: 100vh;
+
+    header {
+        @include header;
+
+        .col-9 {
+            border-bottom: 1px solid #000;
+            display: flex;
+            align-items: flex-end;
+
+            .row {
+                width: 100%;
+                justify-content: space-between;
+
+                .col-3 {
+                    justify-content: center;
+
+                    .label {
+                        @include label;
+                        border-radius: 10px 10px 0px 0px;
+                        border: 1px solid #000;
+                        border-bottom: none;
+                    }
+                }
+            }
+        }
+        
+
+        .col-2 {
+            button {
+                @include mainButton;
+                height: 100%;
+                font-weight: 500;
+                font-size: 20px;
+            }
+        }
+    }
+}

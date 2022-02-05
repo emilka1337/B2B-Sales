@@ -1,0 +1,45 @@
+@import "../variables";
+@import "../mixins";
+
+body {
+    background: $backgroundColor;
+}
+
+.container {
+    padding: 50px 0px;
+    min-height: 100vh;
+
+    header {
+        @include header;
+    }
+
+    main {
+        .brands-row {
+            .col-lg-2 {
+                padding: 40px 20px;
+
+                .brand {
+                    text-align: center;
+                    
+                    
+                    .image-container {
+                        @include shadow;
+                        width: 100%;
+                        border-radius: 10px;
+                        border: 1px solid #006C84;
+                        display: flex;
+                        justify-content: center;
+
+                        img {
+                            width:60%;
+                        }
+                    }
+
+                    h6 {
+                        margin: 20px 0px;
+                    }
+                }
+            }
+        }
+    }
+}

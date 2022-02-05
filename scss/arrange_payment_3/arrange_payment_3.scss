@@ -1,0 +1,60 @@
+@import "../variables";
+@import "../mixins";
+
+body {
+    background: $backgroundColor;
+}
+
+.container {
+    padding: 50px 0px;
+    min-height: 100vh;
+
+    header {
+        @include header;
+
+        .col-9 {
+            text-align: center;
+        }
+    }
+
+    main {
+        .col-6 {
+            .label {
+                @include label;
+                justify-content: center;
+                border-radius: 10px 10px 0px 0px;
+                width: 60%;
+                margin: 20px auto;
+
+                p {
+                    font-weight: 500;
+                }
+            }
+
+            .field {
+                width: 100%;
+                min-height: 50vh;
+                border: 2px solid #000;
+                border-radius: 10px;
+                background: #fff;
+            }
+
+            button {
+                @include mainButton;
+                width: 50%;
+            }
+        }
+
+        .col-4 {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            gap: 20px;
+
+            button {
+                @include mainButton;
+                width: 50%;
+            }
+        }
+    }
+}

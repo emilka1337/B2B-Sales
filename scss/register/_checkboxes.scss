@@ -1,0 +1,46 @@
+.checkboxes {
+    display: flex;
+    align-items: center;
+
+    .col-lg-3 {
+        display: flex;
+        align-items: center;
+    }
+
+    span {
+        margin: 0px 20px;
+        font-size: 18px;
+    }
+
+    input {
+        display: none;
+    }
+
+    label {
+        width: 40px;
+        height: 40px;
+        background: #fff;
+        border: 1px solid #FFCCBB;
+        border-radius: 10px;
+        position: relative;
+
+        &.checked::after {
+            content: "✓";
+            font-size: 40px;
+            position: absolute;
+            top: -12px;
+            left: 4px;
+        }
+    }
+
+    span {
+        letter-spacing: 3px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .checkboxes {
+        flex-direction: column;
+        align-items: center;
+    }
+}

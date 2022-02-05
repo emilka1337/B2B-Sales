@@ -1,0 +1,36 @@
+@import "../variables";
+@import "../mixins";
+
+body {
+    background: $backgroundColor;
+
+    .container {
+        padding: 50px;
+        min-height: 80vh;
+
+        .logo {
+            img {
+                display: block;
+                margin: auto;
+                width: 424px;
+            }
+        }
+
+        @import "./form";
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .container {
+        padding: 0;
+
+        .logo {
+            display: flex;
+            justify-content: center;
+
+            img {
+                width: 80% !important;
+            }
+        }
+    }
+}

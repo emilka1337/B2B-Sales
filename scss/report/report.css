@@ -1,0 +1,85 @@
+body {
+  background: #D5EFF5;
+}
+
+.container {
+  padding: 50px 0px;
+  min-height: 100vh;
+}
+
+.container header {
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  margin-bottom: 50px;
+}
+
+.container header .col-1 button {
+  width: 66px;
+  margin-right: 50px;
+  border: none;
+  background: none;
+}
+
+.container header .col-1 button img {
+  width: 100%;
+}
+
+.container header .col-8 .label,
+.container header .col-9 .label {
+  border-bottom: 1px solid #006C84;
+}
+
+.container header .col-3,
+.container header .col-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  gap: 20px;
+}
+
+.container header .col-3 button,
+.container header .col-2 button {
+  width: 80px;
+  height: 80px;
+  border: none;
+  border-radius: 50%;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(3, 3, 3, 0.11)), to(#ffffff));
+  background: linear-gradient(0deg, rgba(3, 3, 3, 0.11), #ffffff);
+  border: 1px solid #FFCCBB;
+}
+
+.container main .col-6,
+.container main .col-3 {
+  padding: 0;
+  min-height: 70vh;
+  border: 1px solid #6EB5C0;
+  border-radius: 10px;
+}
+
+.container main .label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#6EB5C0), to(#FFFFFF));
+  background: linear-gradient(180deg, #6EB5C0 0%, #FFFFFF 100%);
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.container main .label p {
+  margin: 0;
+  font-size: 22px;
+}
+/*# sourceMappingURL=report.css.map */

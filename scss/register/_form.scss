@@ -1,0 +1,36 @@
+form {
+    // width: 780px;
+    width: 80%;
+    margin: auto;
+
+    h1 {
+        text-align: center;
+        color: #006C84;
+        letter-spacing: 5px;
+        font-size: 26px;
+        font-weight: 700;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+        border: 1px solid #FFCCBB;
+        letter-spacing: 3px;
+    }
+
+    @import "./checkboxes";
+
+    button {
+        @include mainButton;
+        @include shadow;
+        display: block;
+        margin: auto;
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    form {
+        width: 100%;
+    }
+}
