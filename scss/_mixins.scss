@@ -16,8 +16,21 @@
     border-radius: 10px;
     @include shadow;
 
+    img {
+        transition: 500ms;
+    }
+
     &:hover {
         text-decoration: underline;
+    }
+
+    &.opened {
+        border-radius: 10px 10px 0px 0px;
+        border-bottom: none;
+
+        img {
+            transform: rotateX(180deg);
+        }
     }
 }
 

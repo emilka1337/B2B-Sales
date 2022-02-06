@@ -29,8 +29,23 @@ body {
           box-shadow: 5px 5px 5px #666666;
 }
 
+.container .col-lg-6:nth-child(1) .menu ul li a img {
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
+
 .container .col-lg-6:nth-child(1) .menu ul li a:hover {
   text-decoration: underline;
+}
+
+.container .col-lg-6:nth-child(1) .menu ul li a.opened {
+  border-radius: 10px 10px 0px 0px;
+  border-bottom: none;
+}
+
+.container .col-lg-6:nth-child(1) .menu ul li a.opened img {
+  -webkit-transform: rotateX(180deg);
+          transform: rotateX(180deg);
 }
 
 .container .col-lg-6:nth-child(2) .buttons {

@@ -80,6 +80,10 @@ body {
   padding: 0;
 }
 
+.container main .col-lg-6:nth-child(1) .menu ul li {
+  margin-bottom: 20px;
+}
+
 .container main .col-lg-6:nth-child(1) .menu ul li button {
   display: inline-block;
   background-color: #fff;
@@ -103,14 +107,70 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 0;
+}
+
+.container main .col-lg-6:nth-child(1) .menu ul li button img {
+  -webkit-transition: 500ms;
+  transition: 500ms;
 }
 
 .container main .col-lg-6:nth-child(1) .menu ul li button:hover {
   text-decoration: underline;
 }
 
+.container main .col-lg-6:nth-child(1) .menu ul li button.opened {
+  border-radius: 10px 10px 0px 0px;
+  border-bottom: none;
+}
+
+.container main .col-lg-6:nth-child(1) .menu ul li button.opened img {
+  -webkit-transform: rotateX(180deg);
+          transform: rotateX(180deg);
+}
+
 .container main .col-lg-6:nth-child(1) .menu ul li button p {
   margin: 0;
+}
+
+.container main .col-lg-6:nth-child(1) .menu ul li .content {
+  background: #fff;
+  height: 0;
+  overflow: hidden;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+  position: relative;
+  top: -10px;
+  border-radius: 0px 0px 10px 10px;
+  -webkit-box-shadow: 5px 5px 5px #666666;
+          box-shadow: 5px 5px 5px #666666;
+}
+
+.container main .col-lg-6:nth-child(1) .menu ul li .content.visible {
+  height: 300px;
+  overflow-y: scroll;
+  border: 1px solid #FFCCBB;
+  border-top: none;
+}
+
+.container main .col-lg-6:nth-child(1) .menu ul li .content::-webkit-scrollbar {
+  width: 5px;
+}
+
+.container main .col-lg-6:nth-child(1) .menu ul li .content::-webkit-scrollbar-thumb {
+  background: #000;
+  border-radius: 5px;
+}
+
+.container main .col-lg-6:nth-child(1) .menu ul li .content ul {
+  margin: 0px 20px;
+  padding: 20px 0px;
+}
+
+.container main .col-lg-6:nth-child(1) .menu ul li .content ul li {
+  margin-bottom: 20px;
+  -webkit-transform: translateY(10px);
+          transform: translateY(10px);
 }
 
 .container main .col-lg-6:nth-child(2) {
