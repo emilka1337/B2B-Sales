@@ -38,35 +38,35 @@ body {
   height: 80%;
 }
 
-.container main .col-4,
-.container main .col-2 {
-  padding: 0;
-  min-height: 70vh;
-  border: 1px solid #6EB5C0;
-  border-radius: 10px;
+.container main .providers-row .col-lg-4 {
+  padding: 40px 10px;
 }
 
-.container main .label {
+.container main .providers-row .col-lg-4 .provider {
+  text-align: center;
+  height: 20vh;
+}
+
+.container main .providers-row .col-lg-4 .provider .image-container {
+  -webkit-box-shadow: 5px 5px 5px #666666;
+          box-shadow: 5px 5px 5px #666666;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid #006C84;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 100%;
-  border: none;
-  border-radius: 10px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#6ec4c7), to(#FFFFFF));
-  background: linear-gradient(180deg, #6ec4c7 0%, #FFFFFF 100%);
-  padding: 10px 20px;
-  cursor: pointer;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.container main .label p {
-  margin: 0;
-  font-size: 22px;
+.container main .providers-row .col-lg-4 .provider .image-container img {
+  height: 100%;
 }
-/*# sourceMappingURL=arrange.css.map */
+
+.container main .providers-row .col-lg-4 .provider h6 {
+  margin: 20px 0px;
+}
+/*# sourceMappingURL=providers.css.map */

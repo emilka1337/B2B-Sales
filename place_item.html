@@ -14,6 +14,12 @@
     <script defer src="./plugins/flickity/flickity.pkgd.min.js"></script>
     <!-- CSS -->
     <link rel="stylesheet" href="./scss/place_item/place_item.css">
+    <style>
+        select {
+            width: 50%;
+            padding: 5px 20px;
+        }
+    </style>
     <!-- JS -->
     <script defer src="./js/place_item.js"></script>
 </head>
@@ -22,25 +28,25 @@
     <div class="container">
         <header class="row">
             <div class="col-1">
-                <button>
+                <a href="./menu.html">
                     <img src="./img/back.svg" alt="">
-                </button>
+                </a>
             </div>
-            <div class="col-8">
+            <div class="col">
                 <div class="label">
-                    <h1>Название товара</h1>
+                    <h1>Выставить товар</h1>
                 </div>
             </div>
             <div class="col-3">
-                <button>
+                <a href="">
+                    <img src="./img/Vector (2).svg" alt="">
+                </a>
+                <a href="">
                     <img src="./img/Vector (3).svg" alt="">
-                </button>
-                <button>
-                    <img src="./img/download.svg" alt="">
-                </button>
+                </a>
             </div>
         </header>
-        <main class="row">
+        <main class="row py-5">
             <div class="col-lg-6">
                 <div class="row mb-3">
                     <div class="col-6">
@@ -62,14 +68,42 @@
             <div class="col-lg-6">
                 <form>
                     <input type="text" placeholder="баркод">
-                    <input type="text" placeholder="бренд">
+                    <!-- <input type="text" placeholder="бренд"> -->
+                    <label for="brand">Бренд</label>
+                    <select id="brand">
+                        <option value="volvo">Volvo</option>
+                        <option value="saab">Saab</option>
+                        <option value="opel">Opel</option>
+                        <option value="audi">Audi</option>
+                    </select>
                     <input type="text" placeholder="поставщик">
                     <input type="text" placeholder="цена оптовая">
                     <input type="text" placeholder="рек цена">
                     <input type="text" placeholder="скидка">
-                    <input type="text" placeholder="категория">
-                    <input type="text" placeholder="подкатегория">
-                    <input type="text" placeholder="подкатегория 2">
+                    <label for="category">Категория</label>
+                    <select id="category">
+                        <option value="volvo">Volvo</option>
+                        <option value="saab">Saab</option>
+                        <option value="opel">Opel</option>
+                        <option value="audi">Audi</option>
+                    </select>
+                    <label for="subcategory">Подкатегория</label>
+                    <select id="subcategory">
+                        <option value="volvo">Volvo</option>
+                        <option value="saab">Saab</option>
+                        <option value="opel">Opel</option>
+                        <option value="audi">Audi</option>
+                    </select>
+                    <label for="subcategory2">Подкатегория 2</label>
+                    <select id="subcategory2">
+                        <option value="volvo">Volvo</option>
+                        <option value="saab">Saab</option>
+                        <option value="opel">Opel</option>
+                        <option value="audi">Audi</option>
+                    </select>
+                    <!-- <input type="text" placeholder="категория"> -->
+                    <!-- <input type="text" placeholder="подкатегория"> -->
+                    <!-- <input type="text" placeholder="подкатегория 2"> -->
                 </form>
             </div>
         </main>

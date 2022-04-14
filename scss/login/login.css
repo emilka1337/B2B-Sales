@@ -1,5 +1,5 @@
 body {
-  background-color: #D5EFF5;
+  background-color: #f3f3f3;
 }
 
 .container {
@@ -13,20 +13,14 @@ body {
   width: 532px;
 }
 
+.container form {
+  height: 70vh;
+}
+
 .container form input {
-  background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(rgba(255, 255, 255, 0)));
-  background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
   border: 1px solid #FFCCBB;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  -webkit-filter: drop-shadow(4px 7px 4px rgba(0, 0, 0, 0.25));
-          filter: drop-shadow(4px 7px 4px rgba(0, 0, 0, 0.25));
-  border-radius: 10px;
   outline: none;
-  padding: 10px;
   width: 420px;
-  -webkit-box-shadow: 5px 5px 5px #666666;
-          box-shadow: 5px 5px 5px #666666;
 }
 
 .container form .password {
@@ -36,13 +30,13 @@ body {
 .container form .password button {
   position: absolute;
   right: 10px;
-  top: 8px;
+  top: 5px;
   border: none;
   background: none;
 }
 
 .container form a {
-  color: #006C84;
+  color: #2b2b2b;
   text-decoration: none;
   font-weight: 500;
   font-size: 20px;
@@ -54,23 +48,29 @@ body {
 }
 
 .container form button.login {
-  background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#6EB5C0));
-  background: linear-gradient(#fff, #6EB5C0);
+  background: #9be1e5;
   border-radius: 4px;
-  color: #006C84;
+  color: #2b2b2b;
   width: 420px;
-  font-size: 30px;
+  font-size: 26px;
   letter-spacing: 3px;
   font-weight: 700;
   border: 1px solid #FFCCBB;
+  -webkit-box-shadow: 5px 5px 5px #666666;
+          box-shadow: 5px 5px 5px #666666;
 }
 
 .container .main-carousel .carousel-cell {
   padding: 0px 50px;
 }
 
+.container .main-carousel .carousel-cell img {
+  border-radius: 15px;
+}
+
 footer {
-  background-color: #006C84;
+  background-color: #f3f3f3;
+  border-top: 1px solid #868686;
   min-height: 10vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -104,7 +104,9 @@ footer main p {
   .container .logo img {
     width: 100%;
   }
-  .container form input, .container form div, .container form button.login {
+  .container form input,
+  .container form div,
+  .container form button.login {
     width: 100%;
   }
 }

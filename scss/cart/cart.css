@@ -1,0 +1,49 @@
+body {
+  background: #f3f3f3;
+}
+
+.container {
+  padding: 50px 0px;
+  min-height: 100vh;
+}
+
+.container header .col-1 img {
+  width: 50%;
+}
+
+.container header .col .label {
+  border-bottom: 1px solid #006C84;
+}
+
+.container header .col-3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  gap: 20px;
+}
+
+.container header .col-3 a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.container header .col-3 a img {
+  height: 80%;
+}
+
+.container main .items .cart-item {
+  padding: 20px 0px;
+  border-bottom: 1px solid #000;
+}
+
+.container main .items .cart-item:last-child {
+  border-bottom: none;
+}
+/*# sourceMappingURL=cart.css.map */

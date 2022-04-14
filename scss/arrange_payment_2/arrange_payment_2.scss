@@ -18,7 +18,7 @@ body {
     }
 
     main {
-        .col-6 {
+        .col-lg-6 {
             .label {
                 @include label;
                 justify-content: center;

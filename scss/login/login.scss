@@ -18,16 +18,16 @@ body {
     }
 
     form {
+        height: 70vh;
+
         input {
-            background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+            // background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
             border: 1px solid #FFCCBB;
-            box-sizing: border-box;
-            filter: drop-shadow(4px 7px 4px rgba(0, 0, 0, 0.25));
-            border-radius: 10px;
+            // border-radius: 10px;
             outline: none;
-            padding: 10px;
+            // padding: 10px;
             width: 420px;
-            @include shadow;
+            // @include shadow;
         }
 
         .password {
@@ -36,14 +36,14 @@ body {
             button {
                 position: absolute;
                 right: 10px;
-                top: 8px;
+                top: 5px;
                 border: none;
                 background: none;
             }
         }
 
         a {
-            color: #006C84;
+            color: #2b2b2b;
             text-decoration: none;
             font-weight: 500;
             font-size: 20px;
@@ -56,18 +56,24 @@ body {
 
         button.login {
             @include mainButton;
+            @include shadow;
         }
     }
 
     .main-carousel {
         .carousel-cell {
             padding: 0px 50px;
+
+            img {
+                border-radius: 15px;
+            }
         }
     }
 }
 
 footer {
-    background-color: #006C84;
+    background-color: $backgroundColor;
+    border-top: 1px solid rgb(134, 134, 134);
     min-height: 10vh;
     display: flex;
     align-items: center;
@@ -97,7 +103,10 @@ footer {
         }
 
         form {
-            input, div, button.login {
+
+            input,
+            div,
+            button.login {
                 width: 100%;
             }
         }

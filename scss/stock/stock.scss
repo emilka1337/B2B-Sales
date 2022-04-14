@@ -11,36 +11,36 @@ body {
 
     header {
         @include header;
+        @include items-filter;
 
-        .col-9 {
-            border-bottom: 1px solid #000;
-            display: flex;
-            align-items: flex-end;
-
-            .row {
-                width: 100%;
-                justify-content: space-between;
-
-                .col-3 {
-                    justify-content: center;
-
-                    .label {
-                        @include label;
-                        border-radius: 10px 10px 0px 0px;
-                        border: 1px solid #000;
-                        border-bottom: none;
-                    }
-                }
-            }
-        }
-        
 
         .col-2 {
             button {
                 @include mainButton;
+                width: 100% !important;
                 height: 100%;
                 font-weight: 500;
                 font-size: 20px;
+            }
+        }
+    }
+
+    main {
+        table {
+            width: 100%;
+
+            th,
+            td {
+                border-right: 1px solid #8a8a8a;
+                padding: 0px 5px;
+
+                &:last-child {
+                    border-right: none;
+                }
+            }
+
+            tr:nth-child(even) {
+                background-color: #D6EEEE;
             }
         }
     }

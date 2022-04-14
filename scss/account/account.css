@@ -1,5 +1,5 @@
 body {
-  background-color: #D5EFF5;
+  background-color: #f3f3f3;
 }
 
 .container {
@@ -7,42 +7,15 @@ body {
   min-height: 100vh;
 }
 
-.container header {
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  margin-bottom: 50px;
+.container header .col-1 img {
+  width: 50%;
 }
 
-.container header .col-1:nth-child(1),
-.container header .col-2:nth-child(1),
-.container header .col-3:nth-child(1) {
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-}
-
-.container header .col-1:nth-child(1) button,
-.container header .col-2:nth-child(1) button,
-.container header .col-3:nth-child(1) button {
-  width: 66px;
-  border: none;
-  background: none;
-}
-
-.container header .col-1:nth-child(1) button img,
-.container header .col-2:nth-child(1) button img,
-.container header .col-3:nth-child(1) button img {
-  width: 100%;
-}
-
-.container header .col-8 .label,
-.container header .col-9 .label,
-.container header .col-10 .label {
+.container header .col .label {
   border-bottom: 1px solid #006C84;
 }
 
-.container header .col-3,
-.container header .col-2 {
+.container header .col-3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -52,26 +25,17 @@ body {
   gap: 20px;
 }
 
-.container header .col-3 button,
-.container header .col-2 button {
-  width: 80px;
-  height: 80px;
-  border: none;
-  border-radius: 50%;
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(3, 3, 3, 0.11)), to(#ffffff));
-  background: linear-gradient(0deg, rgba(3, 3, 3, 0.11), #ffffff);
-  border: 1px solid #FFCCBB;
+.container header .col-3 a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
-@media screen and (max-width: 992px) {
-  .container header .col-1:nth-child(1) button,
-  .container header .col-3:nth-child(1) button {
-    margin: 0 !important;
-  }
-  .container header .col-1:nth-child(1) button img,
-  .container header .col-3:nth-child(1) button img {
-    width: 100%;
-  }
+.container header .col-3 a img {
+  height: 80%;
 }
 
 .container .profile .avatar {
@@ -106,7 +70,7 @@ body {
 .container .buttons ul a {
   display: inline-block;
   background-color: #fff;
-  color: #006C84;
+  color: #2b2b2b;
   padding: 10px 100px;
   text-decoration: none;
   width: 100%;

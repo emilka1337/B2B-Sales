@@ -9,44 +9,89 @@
     <!-- Bootstrap -->
     <link rel="stylesheet" href="./bootstrap/bootstrap.min.css">
     <script src="./bootstrap/bootstrap.bundle.min.js"></script>
+    <!-- Flickity carousel -->
+    <link rel="stylesheet" href="./plugins/flickity/flickity.min.css">
+    <script defer src="./plugins/flickity/flickity.pkgd.min.js"></script>
     <!-- CSS -->
     <link rel="stylesheet" href="./scss/menu/menu.css">
+    <!-- JS -->
+    <script defer src="./js/menu.js"></script>
 </head>
 
 <body>
     <div class="container">
-        <div class="row">
+        <header class="row">
+            <div class="col-1">
+                <a href="./menu.html">
+                    <img src="./img/back.svg" alt="">
+                </a>
+            </div>
+            <div class="col">
+                <div class="label">
+                    <h1>Меню</h1>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="dropdown">
+                    <button id="notifications" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="./img/Vector (1).svg" alt="">
+                    </button>
+                    <div class="dropdown-menu notifications-container" aria-labelledby="notifications">
+                        <ul class="notifications-list" >
+                            <li>An item</li>
+                            <li>A second item</li>
+                            <li>A third item</li>
+                            <li>A fourth item</li>
+                            <li>And a fifth one</li>
+                        </ul>
+                    </div>
+                </div>
+                <a href="">
+                    <img src="./img/Vector (2).svg" alt="">
+                </a>
+                <a href="">
+                    <img src="./img/Vector (3).svg" alt="">
+                </a>
+            </div>
+        </header>
+
+        <main class="row py-5">
             <div class="col-lg-6">
                 <div class="menu">
                     <ul>
-                        <li><a href="">Бренд</a></li>
-                        <li><a href="">Категория</a></li>
-                        <li><a href="">Поставщик</a></li>
-                        <li><a href="">Поиск</a></li>
+                        <li><a href="./brand.html">Бренд</a></li>
+                        <li><a href="./brand_category.html">Категория</a></li>
+                        <li><a href="./providers.html">Поставщики</a></li>
+                        <li><a href="./search.html">Поиск</a></li>
                         <li><a href="">Акции / Скидки</a></li>
-                        <li><a href="">Новинки</a></li>
-                        <li><a href="">Сток</a></li>
-                        <li><a href="">Настройки</a></li>
+                        <li><a href="./new.html">Новинки</a></li>
+                        <li><a href="./stock.html">Сток</a></li>
+                        <li><a href="">Выход</a></li>
                     </ul>
                 </div>
             </div>
             <div class="col-lg-6">
-                <div class="buttons d-flex justify-content-end">
-                    <a href="">
-                        <img src="./img/Vector (1).svg" alt="">
-                    </a>
-                    <a href="">
-                        <img src="./img/Vector (2).svg" alt="">
-                    </a>
-                    <a href="">
-                        <img src="./img/Vector (3).svg" alt="">
-                    </a>
-                </div>
                 <div class="ad">
-                    <h1>Реклама</h1>
+                    <div class="main-carousel">
+                        <div class="carousel-cell">
+                            <h1>Реклама</h1>
+                        </div>
+                        <div class="carousel-cell">
+                            <h1>Реклама</h1>
+                        </div>
+                        <div class="carousel-cell">
+                            <h1>Реклама</h1>
+                        </div>
+                        <div class="carousel-cell">
+                            <h1>Реклама</h1>
+                        </div>
+                        <div class="carousel-cell">
+                            <h1>Реклама</h1>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
+        </main>
     </div>
 </body>
 

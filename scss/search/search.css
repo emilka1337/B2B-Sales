@@ -1,5 +1,5 @@
 body {
-  background: #D5EFF5;
+  background: #f3f3f3;
 }
 
 .container {
@@ -7,42 +7,15 @@ body {
   min-height: 100vh;
 }
 
-.container header {
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  margin-bottom: 50px;
+.container header .col-1 img {
+  width: 50%;
 }
 
-.container header .col-1:nth-child(1),
-.container header .col-2:nth-child(1),
-.container header .col-3:nth-child(1) {
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-}
-
-.container header .col-1:nth-child(1) button,
-.container header .col-2:nth-child(1) button,
-.container header .col-3:nth-child(1) button {
-  width: 66px;
-  border: none;
-  background: none;
-}
-
-.container header .col-1:nth-child(1) button img,
-.container header .col-2:nth-child(1) button img,
-.container header .col-3:nth-child(1) button img {
-  width: 100%;
-}
-
-.container header .col-8 .label,
-.container header .col-9 .label,
-.container header .col-10 .label {
+.container header .col .label {
   border-bottom: 1px solid #006C84;
 }
 
-.container header .col-3,
-.container header .col-2 {
+.container header .col-3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -52,29 +25,7 @@ body {
   gap: 20px;
 }
 
-.container header .col-3 button,
-.container header .col-2 button {
-  width: 80px;
-  height: 80px;
-  border: none;
-  border-radius: 50%;
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(3, 3, 3, 0.11)), to(#ffffff));
-  background: linear-gradient(0deg, rgba(3, 3, 3, 0.11), #ffffff);
-  border: 1px solid #FFCCBB;
-}
-
-@media screen and (max-width: 992px) {
-  .container header .col-1:nth-child(1) button,
-  .container header .col-3:nth-child(1) button {
-    margin: 0 !important;
-  }
-  .container header .col-1:nth-child(1) button img,
-  .container header .col-3:nth-child(1) button img {
-    width: 100%;
-  }
-}
-
-.container header .col-9 {
+.container header .col-3 a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -83,25 +34,38 @@ body {
           align-items: flex-end;
 }
 
-.container header .col-9 .row {
+.container header .col-3 a img {
+  height: 80%;
+}
+
+.container header .col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.container header .col .row {
   width: 100%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
 
-.container header .col-9 .row form {
+.container header .col .row form {
   position: relative;
 }
 
-.container header .col-9 .row form img {
+.container header .col .row form img {
   position: absolute;
   top: 20px;
   left: 20px;
   width: 30px;
 }
 
-.container header .col-9 .row form input {
+.container header .col .row form input {
   background: none;
   border: none;
   border-bottom: 1px solid #000;
@@ -145,8 +109,31 @@ body {
   height: 30px;
 }
 
+@media screen and (max-width: 992px) {
+  .container main .product .image-container .col-3 button img {
+    width: 30px;
+    position: relative;
+    right: 15px;
+  }
+}
+
 .container main .product h6 {
   text-align: center;
   margin: 20px 0px;
+}
+
+@media screen and (max-width: 992px) {
+  .container main {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .container main .col-lg-3 {
+    width: 100%;
+    padding: 0;
+  }
+  .container main .col-lg-3 .product {
+    padding: 0px 30px;
+  }
 }
 /*# sourceMappingURL=search.css.map */

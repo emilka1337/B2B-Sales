@@ -12,7 +12,7 @@ body {
     header {
         @include header;
 
-        .col-9 {
+        .col {
             display: flex;
             align-items: flex-end;
 
@@ -46,6 +46,19 @@ body {
     main {
         .product {
             @include product;
+        }
+
+        @media screen and (max-width: 992px) {
+            justify-content: center;
+
+            .col-lg-3 {
+                width: 100%;
+                padding: 0;
+
+                .product {
+                    padding: 0px 30px;
+                }
+            }
         }
     }
 }
